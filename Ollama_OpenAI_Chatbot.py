@@ -22,8 +22,7 @@ from check_models import check_install_models
 
 # Default prompt and model list
 prompt = "What's the difference between the roles user, assistant and system, please?"
-# model_list = ["neural-chat", "gemma2:2b", "mistral", "deepseek-r1:7b"]
-model_list = ["gemma2:2b"]
+model_list = ["neural-chat", "gemma2:2b", "mistral", "deepseek-r1:7b"]
 check_install_models(model_list) # Helper function downloads missing models
 
 ### Local Chatbot Deployment
