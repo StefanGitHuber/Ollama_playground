@@ -12,6 +12,9 @@ ollama pull deepseek-r1:7b
 - Prompts "deepseek-r1:7b"
 - Optional: Run GUI using Gradio
 
+## Ollama_model_data.py
+- Prompt list of small Ollama models on it's best use cases and training data
+
 ## Note:
 I used to experient with AI models using Hugging Face (HF) python libraries, especially the efficient transformers lib.
 It's a comprehensive + powerful toolkit working with LLMs.
