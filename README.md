@@ -15,6 +15,10 @@ ollama pull deepseek-r1:7b
 ## Ollama_model_data.py
 - Prompt list of small Ollama models on it's best use cases and training data
 
+## Ollama_model_params.sh
+- Simple bash script runs over a selected list of small Ollama models.
+- Uses Ollama REPL command "/show info" to reveals model infos like architecture, num of params, context + embedding length, quantization method etc
+
 ## Note:
 I used to experient with AI models using Hugging Face (HF) python libraries, especially the efficient transformers lib.
 It's a comprehensive + powerful toolkit working with LLMs.
