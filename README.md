@@ -8,7 +8,7 @@ pip install -r requirements.txt
 Super simple chatbot interface:
 - Ollama wrapper on OpenAI chat completion API
 - Ollama Client hosts local server
-- Gradio offers GUI on local endpoint http://localhost:11434 and public interface at https://<whatever>.gradio.live/
+- Gradio offers GUI on local endpoint http://localhost:11434 and public interface at https://someweirdnumberstring.gradio.live/
 
 ## Ollama_DeepSeek.py 
 - requires a model (download chosen DeepSeek via pull request)
