@@ -5,7 +5,7 @@
 Super simple chatbot interface:
 - Ollama wrapper on OpenAI chat completion API
 - Ollama Client hosts local server
-- Gradio GUI offers local endpoint http://localhost:11434 and public interface at https://<whatever>.gradio.live/
+- Gradio offers GUI on local endpoint http://localhost:11434 and public interface at https://<whatever>.gradio.live/
 - Chatbot/QnA offers LLMs "neural-chat", "gemma2:2b", "mistral", "deepseek-r1:7b" to interact with
 
 OpenAI chat completion API offers 3 distinct roles:
@@ -18,11 +18,12 @@ import json
 import openai
 import gradio as gr
 from typing import List, Tuple
-from ollama_check_models import check_install_models
+from check_models import check_install_models
 
 # Default prompt and model list
 prompt = "What's the difference between the roles user, assistant and system, please?"
-model_list = ["neural-chat", "gemma2:2b", "mistral", "deepseek-r1:7b"]
+# model_list = ["neural-chat", "gemma2:2b", "mistral", "deepseek-r1:7b"]
+model_list = ["gemma2:2b"]
 check_install_models(model_list) # Helper function downloads missing models
 
 ### Local Chatbot Deployment
@@ -63,7 +64,7 @@ with gr.Blocks() as iface:
    gr.Markdown(f"## Chatbot Interface")
    with gr.Row():
         with gr.Column():
-            chatbot = gr.Chatbot()
+            chatbot = gr.Chatbot(type="messages")
             message = gr.Textbox(value=prompt, placeholder="Enter message here...", label="Message")
             role_dropdown = gr.Dropdown(choices=["user", "assistant", "system"], value="user", label="Select Role")
             model_dropdown = gr.Dropdown(choices=model_list, value="neural-chat", label="Select Model")
