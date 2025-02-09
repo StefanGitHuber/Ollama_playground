@@ -4,6 +4,12 @@ Simplest Python scripts running Ollama locally to play with small-sized AI model
 ## Install possibly missing python packages
 pip install -r requirements.txt
 
+## Ollama_OpenAI_Chatbot.py
+Super simple chatbot interface:
+- Ollama wrapper on OpenAI chat completion API
+- Ollama Client hosts local server
+- Gradio offers GUI on local endpoint http://localhost:11434 and public interface at https://<whatever>.gradio.live/
+
 ## Ollama_DeepSeek.py 
 - requires a model (download chosen DeepSeek via pull request)
 ollama pull deepseek-r1:7b
