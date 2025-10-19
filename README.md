@@ -11,7 +11,7 @@ Super simple chatbot interface:
 - Gradio offers GUI on local endpoint http://localhost:11434 and public interface at https://someweirdnumberstring.gradio.live/
 
 ## Ollama_DeepSeek.py 
-- requires a model (download chosen DeepSeek via pull request)
+- Requires a model (download chosen DeepSeek via pull request)
 ollama pull deepseek-r1:7b
 
 - Ollama Client hosts local server at http://localhost:11434
@@ -31,11 +31,11 @@ It's a comprehensive + powerful toolkit working with LLMs.
 
 But with the advent of smaller LMs, Ollama offers a specialized + streamlined experience:
 - Specialized for inference, lower overhead
-- Centralized Model Hub, Curated Selection of Open-Source Models
-- runs + manages open-source models efficiently
-- adds layer of abstraction on top of libraries like transformers
-- more user-friendly + optimized environment for specific use cases
-- serve LLMs locally through REST API
+- Centralized Model Hub, curated selection of Open-Source Models
+- Runs + manages open-source models efficiently
+- Adds layer of abstraction on top of libraries like transformers
+- More user-friendly + optimized environment for specific use cases
+- Serve LLMs locally through REST API
 
 250209: Been dealing lately with the question "which model most efficient+performant for which task" to establish a model portfolio. To avoid "using a sledgehammer to crack a nut" in order to save clients money lowering computational efforts + (GPU) server costs. **Fit small models to easy tasks => leverage big models on complex tasks.**
 
